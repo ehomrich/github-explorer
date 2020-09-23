@@ -1,4 +1,5 @@
 import React, { useState, useEffect, FormEvent } from 'react';
+import { Link } from 'react-router-dom';
 import { FiChevronRight } from 'react-icons/fi';
 
 import logoImg from '../../assets/logo.svg';
@@ -78,14 +79,14 @@ const Dashboard: React.FC = () => {
       <Repositories>
         {repositories.map(
           ({ full_name, description, owner: { avatar_url, login } }) => (
-            <a key={full_name} href="teste">
+            <Link key={full_name} to={`/repositories/${full_name}`}>
               <img src={avatar_url} alt={login} />
               <div>
                 <strong>{full_name}</strong>
                 <p>{description}</p>
               </div>
               <FiChevronRight size="20" />
-            </a>
+            </Link>
           ),
         )}
       </Repositories>
