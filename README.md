@@ -1,3 +1,17 @@
+<h1 align="center">
+  Bootcamp GoStack - módulo 3
+</h1>
+
+<h3 align="center">
+  Primeiro projeto com React: <b>GitHub Explorer</b>
+</h3>
+
+
+Construção de um app utilizando a API pública do GitHub, para pesquisa de repositórios e visualização de informações, como stars, forks e issues abertas.
+
+---
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
